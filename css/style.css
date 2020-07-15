@@ -1,0 +1,260 @@
+/* Style Elements */
+h1 {
+    font-size: 3.5rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+h2 {
+    font-size: 2.5rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+h3 {
+    font-size: 40pt;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 28pt;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h6 {
+    font-size: 20pt;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+p {
+    font-size: 14pt;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Proxima Nova Fonts 
+
+
+Proxima Nova Bold
+font-family: proxima-nova, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+
+Proxima Nova Bold Italic
+font-family: proxima-nova, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+
+
+Proxima Nova Semibold
+font-family: proxima-nova, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+
+Proxima Nova Semibold Italic
+font-family: proxima-nova, sans-serif;
+font-weight: 600;
+font-style: italic;
+
+
+Proxima Nova Regular
+font-family: proxima-nova, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+Proxima Nova Italic
+font-family: proxima-nova, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+
+Proxima Nova Medium
+font-family: proxima-nova, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
+Proxima Nova Medium Italic
+font-family: proxima-nova, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+
+*/
+
+body{
+    margin: 50px 100px 0px 100px;
+}
+
+
+/* Navigation Bar CSS */
+.headerLogo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav li {
+    display: inline-block;
+    text-align: left;
+}
+
+.logo {
+    padding: 1%;
+    text-align: center;
+}
+
+#logoSH{
+    width: 40px;
+    height: auto;
+}
+
+.navbar {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: center;
+
+}
+
+.navItems {
+    list-style: none; /* remove bullets */
+    float: right;
+}
+
+.navItems a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 18px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4C5B72;
+    display: inline-block;
+}
+
+a.menu-Item:hover {
+    color: #E60073;
+}
+
+/* Hero Section CSS*/
+
+.heroSection {
+    padding-top: 100px;
+}
+
+.heroContentRow {
+    display: flex;
+    text-align: center;
+}
+
+.columnIntro {
+    flex:50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.introText
+{
+    color: #E60073;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.jobTitle {
+    color: #4C5B72;
+    margin: 0em;
+}
+
+.shortBio {
+    margin-top: .5em;
+}
+.columnSelfImage {
+
+}
+
+/*@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}*/
+
+
+
+
+/* NOT USING THIS CODE
+
+nav {
+    display: inline-block;
+    margin-top: 50px;
+    }
+
+.logo {
+    width: 25%;
+    padding: 5%;
+    text-align: center;
+    float: left;
+
+}
+
+.topNav-right {
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    float: right;
+}
+
+.topNav-right li {
+    list-style: none;
+    display: list-item;
+    float: right;
+}
+*/
+
+
+/* Footer CSS */
+
+footer {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.socialIcons {
+    display: inline-block;
+}
+
+.social {
+    width: 10%;
+    padding: 15px 40px 15px 40px;
+    float: left;
+}
+
+
+
+
