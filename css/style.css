@@ -107,142 +107,103 @@ font-style: italic;
 
 */
 
-body{
-    margin: 50px 100px 0px 100px;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
 }
 
 
-/* Navigation Bar CSS */
-.headerLogo {
-    display: inline-block;
-    vertical-align: top;
-}
-
-nav li {
-    display: inline-block;
-    text-align: left;
-}
-
-.logo {
-    padding: 1%;
-    text-align: center;
-}
-
-#logoSH{
-    width: 40px;
-    height: auto;
-}
-
-.navbar {
-    display: inline-block;
-    float: right;
-    width: 50%;
-    text-align: center;
-
-}
-
-.navItems {
-    list-style: none; /* remove bullets */
-    float: right;
-}
-
-.navItems a{
-    text-decoration: none;
-    padding: 20px;
-    font-size: 18px;
+.navItem li, a {
     font-family: proxima-nova, sans-serif;
+    font-size: 18px;
     font-weight: 700;
     font-style: normal;
     color: #4C5B72;
-    display: inline-block;
+    text-decoration: none;
 }
 
-a.menu-Item:hover {
-    color: #E60073;
-}
-
-/* Hero Section CSS*/
-
-.heroSection {
-    padding-top: 100px;
-}
-
-.heroContentRow {
+header {
     display: flex;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 250px;
 }
-
-.columnIntro {
-    flex:50%;
-    padding: 20px;
-    text-align: left;
-}
-
-.introText
-{
-    color: #E60073;
-    margin-top: 0em;
-    margin-bottom: 0em;
-}
-
-.jobTitle {
-    color: #4C5B72;
-    margin: 0em;
-}
-
-.shortBio {
-    margin-top: .5em;
-}
-.columnSelfImage {
-
-}
-
-/*@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-}*/
-
-
-
-
-/* NOT USING THIS CODE
-
-nav {
-    display: inline-block;
-    margin-top: 50px;
-    }
 
 .logo {
-    width: 25%;
-    padding: 5%;
-    text-align: center;
-    float: left;
-
+    cursor: pointer;
 }
 
-.topNav-right {
-    width: 50%;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    float: right;
-}
-
-.topNav-right li {
+.navLinks {
     list-style: none;
-    display: list-item;
-    float: right;
 }
-*/
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px; /* zero top an bottom, 20px left and right*/
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+
+}
+.navLinks li a:hover {
+    color: #E60073;
+    
+}
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    Padding: 40px 250px 115px 250px;
+}
+
+/*.columnIntro{
+    flex: 50%;
+}*/
+
+.columnIntro {
+    padding-right: 50px;
+}
+
+h1.introText {
+    color: #E60073;
+}
+
+h2.jobTitle {
+    color: #4C5B72;
+}
+
+h4.shortBio{
+    padding: 10px 0;
+}
+
+.projectContainer {
+    align-items: center;
+}
+
+.heroProject {
+    align-items: center;
+    margin: 0px 250px;
+}
 
 
 /* Footer CSS */
 
 footer {
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+}
+
+.footerContainer{
+    padding-top: 40px;
+}
+
+h6.connectFooter{
+    color: #4C5B72;
 }
 
 .socialIcons {
@@ -256,5 +217,16 @@ footer {
 }
 
 
+.copyright{
+    padding-bottom: 40px;
+}
 
 
+/* About Page */
+
+.aboutImage {
+    display: block;
+    align-items: center;
+    padding: 40px;
+
+}
