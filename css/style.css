@@ -39,7 +39,7 @@ h5 {
 }
 
 h6 {
-    font-size: 20pt;
+    font-size: 18pt;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -142,7 +142,7 @@ header {
 
 .navLinks li {
     display: inline-block;
-    padding: 0px 20px; /* zero top an bottom, 20px left and right*/
+    padding: 0px 0px 0px 20px; /*zero top an bottom, 20px left and right*/
 }
 
 .navLinks li a {
@@ -162,10 +162,6 @@ header {
     Padding: 40px 250px 115px 250px;
 }
 
-/*.columnIntro{
-    flex: 50%;
-}*/
-
 .columnIntro {
     padding-right: 50px;
 }
@@ -182,20 +178,91 @@ h4.shortBio{
     padding: 10px 0;
 }
 
-.projectContainer {
-    align-items: center;
+
+/*my work section*/
+.project-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
-.heroProject {
-    align-items: center;
-    margin: 0px 250px;
+.project-grid-main {
+    grid-column: 1/3;
 }
+
+.project-grid-left {
+    grid-column: 1/1;
+}
+
+.project-grid-right{
+    grid-column: 2/span 1;
+}
+
+/*@media screen and (max-width: 600px) {
+    .project-grid-left img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .project-grid-right img {
+      width: 100%;
+    }
+  }*/
+
+/*about Me*/
+
+.aboutImage img{
+    padding: 0 250px 20px 250px;
+    width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 50%;
+    margin-left: 250px;
+}
+
+.right {
+    width: 20%;
+    margin-right: 250px;
+    padding-left: 20px;
+}
+
+.aboutMe:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button-Resume {
+    margin: 20px 250px;
+}
+
+@media screen and (max-width: 600px) {
+    .left {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .right {
+      width: 100%;
+    }
+  }
 
 
 /* Footer CSS */
 
 footer {
     text-align: center;
+    width: 100%;
+    bottom: 0;
+    display: block;
 }
 
 .footerContainer{
@@ -222,11 +289,5 @@ h6.connectFooter{
 }
 
 
-/* About Page */
 
-.aboutImage {
-    display: block;
-    align-items: center;
-    padding: 40px;
 
-}
